@@ -7,3 +7,11 @@ __pycache__/
 .DS_Store
 .idea/
 .vscode/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
