@@ -5,3 +5,8 @@ numpy
 # Machine learning
 scikit-learn
 joblib
+
+# API
+fastapi
+uvicorn[standard]
+pydantic
