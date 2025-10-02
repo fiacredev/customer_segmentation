@@ -1,0 +1,7 @@
+# Data handling
+pandas
+numpy
+
+# Machine learning
+scikit-learn
+joblib
