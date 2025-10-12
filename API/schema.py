@@ -8,3 +8,5 @@ features = joblib.load("models/features.pkl")
 #     "CustomerData",
 #     **{feature: (float, ...) for feature in features}
 # )
+
+from pydantic import BaseModel, Field
