@@ -10,3 +10,9 @@ features = joblib.load("models/features.pkl")
 # )
 
 from pydantic import BaseModel, Field
+
+
+class CustomerData(BaseModel):
+
+    Education: float = Field(..., example=7)
+    Income: float = Field(..., example=65000)
