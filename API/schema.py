@@ -19,3 +19,5 @@ class CustomerData(BaseModel):
 
     Kidhome: float = Field(..., example=0)
     Teenhome: float = Field(..., example=1)
+
+    Recency: float = Field(..., example=20)
