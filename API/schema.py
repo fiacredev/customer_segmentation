@@ -16,3 +16,6 @@ class CustomerData(BaseModel):
 
     Education: float = Field(..., example=7)
     Income: float = Field(..., example=65000)
+
+    Kidhome: float = Field(..., example=0)
+    Teenhome: float = Field(..., example=1)
