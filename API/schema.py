@@ -25,3 +25,6 @@ class CustomerData(BaseModel):
     Wines: float = Field(..., example=450)
     Fruits: float = Field(..., example=30)
     Meat: float = Field(..., example=250)
+    Fish: float = Field(..., example=60)
+    Sweets: float = Field(..., example=35)
+    Gold: float = Field(..., example=80)
