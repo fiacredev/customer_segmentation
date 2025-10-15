@@ -28,3 +28,6 @@ class CustomerData(BaseModel):
     Fish: float = Field(..., example=60)
     Sweets: float = Field(..., example=35)
     Gold: float = Field(..., example=80)
+
+    NumDealsPurchases: float = Field(..., example=3)
+    NumWebPurchases: float = Field(..., example=8)
