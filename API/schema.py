@@ -40,3 +40,13 @@ class CustomerData(BaseModel):
     Age: float = Field(..., example=45)
 
     Spent: float = Field(..., example=900)
+
+    Living_With: float = Field(..., example=1)
+
+    Children: float = Field(..., example=1)
+
+    Family_Size: float = Field(..., example=3)
+
+    Is_Parent: float = Field(..., example=1)
+
+    Total_Promos: float = Field(..., example=2)
