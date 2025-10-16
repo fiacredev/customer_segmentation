@@ -34,3 +34,9 @@ class CustomerData(BaseModel):
     NumCatalogPurchases: float = Field(..., example=4)
     NumStorePurchases: float = Field(..., example=10)
     NumWebVisitsMonth: float = Field(..., example=5)
+
+    Customer_For: float = Field(..., example=3000)
+
+    Age: float = Field(..., example=45)
+
+    Spent: float = Field(..., example=900)
