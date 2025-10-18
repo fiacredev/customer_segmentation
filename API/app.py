@@ -9,3 +9,5 @@ app = FastAPI(title="Customer Segmentation API")
 
 # Load model
 model = joblib.load("models/customer_segmentation.pkl")
+
+features = joblib.load("models/features.pkl")
