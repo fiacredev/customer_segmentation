@@ -6,3 +6,6 @@ from pydantic import BaseModel
 from schema import CustomerData
 
 app = FastAPI(title="Customer Segmentation API")
+
+# Load model
+model = joblib.load("models/customer_segmentation.pkl")
