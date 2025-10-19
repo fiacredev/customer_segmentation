@@ -15,3 +15,7 @@ features = joblib.load("models/features.pkl")
 @app.get("/")
 def home():
     return {"message": "Customer Segmentation API is running"}
+
+@app.get("/features")
+def get_features():
+    return features
