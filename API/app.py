@@ -22,3 +22,8 @@ def get_features():
 
 @app.post("/predict")
 def predict(data: CustomerData): # type: ignore
+
+    # Convert request to dataframe
+    df = pd.DataFrame(
+        [data.model_dump()]
+    )
