@@ -19,3 +19,6 @@ def home():
 @app.get("/features")
 def get_features():
     return features
+
+@app.post("/predict")
+def predict(data: CustomerData): # type: ignore
