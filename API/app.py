@@ -31,3 +31,7 @@ def predict(data: CustomerData): # type: ignore
 
     # Keep same feature order
     df = df[features]
+
+
+    # Predict cluster
+    cluster = model.predict(df)[0]
