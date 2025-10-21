@@ -27,3 +27,7 @@ def predict(data: CustomerData): # type: ignore
     df = pd.DataFrame(
         [data.model_dump()]
     )
+
+
+    # Keep same feature order
+    df = df[features]
