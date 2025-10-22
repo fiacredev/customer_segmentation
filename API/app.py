@@ -35,3 +35,16 @@ def predict(data: CustomerData): # type: ignore
 
     # Predict cluster
     cluster = model.predict(df)[0]
+
+
+    cluster_information = {
+
+        0:{
+            "name":"Premium Customers",
+            "action":"Offer loyalty rewards"
+        },
+
+        1:{
+            "name":"Budget Customers",
+            "action":"Send discounts"
+        },
