@@ -48,3 +48,13 @@ def predict(data: CustomerData): # type: ignore
             "name":"Budget Customers",
             "action":"Send discounts"
         },
+
+        2:{
+            "name":"Regular Customers",
+            "action":"Recommend products"
+        },
+
+        3:{
+            "name":"Inactive Customers",
+            "action":"Retention campaign"
+        }
