@@ -58,3 +58,19 @@ def predict(data: CustomerData): # type: ignore
             "name":"Inactive Customers",
             "action":"Retention campaign"
         }
+
+    }
+
+
+    return {
+
+        "cluster": int(cluster),
+
+        "segment":
+            cluster_information[int(cluster)]["name"],
+
+        "recommendation":
+            cluster_information[int(cluster)]["action"]
+
+    }
+3.
