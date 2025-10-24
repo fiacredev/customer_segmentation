@@ -15,3 +15,24 @@ An end-to-end machine-learning project that groups customers from a marketing ca
 </div>
 
 ---
+
+## Overview
+
+Understanding *who* your customers are is the first step toward marketing that actually converts.
+This project takes a real marketing-campaign dataset, engineers meaningful customer features,
+reduces them with **PCA**, clusters the customers with **Agglomerative Clustering** (validated with
+the elbow method on K-Means), and packages everything behind a REST API.
+
+Give the API a customer profile and it instantly replies with:
+
+- the **cluster** the customer belongs to,
+- a human-readable **segment name**, and
+- a ready-to-use marketing **recommendation**.
+
+### Features
+
+- End-to-end notebook: cleaning -> feature engineering -> encoding -> scaling -> PCA -> clustering
+- Trained artifacts saved with `joblib` and reloaded by the API
+- FastAPI service with automatic interactive docs at `/docs`
+- Strict request validation through a Pydantic schema generated from the saved feature order
+- Every cluster mapped to a marketing playbook (loyalty, discounts, recommendations, retention)
