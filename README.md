@@ -36,3 +36,21 @@ Give the API a customer profile and it instantly replies with:
 - FastAPI service with automatic interactive docs at `/docs`
 - Strict request validation through a Pydantic schema generated from the saved feature order
 - Every cluster mapped to a marketing playbook (loyalty, discounts, recommendations, retention)
+
+## Project Structure
+
+````text
+customer-segmentation/
+|
++-- marketing_campaign.csv      # Raw campaign dataset (2,240 customers)
++-- segment.ipynb               # Full ML workflow: EDA, preprocessing, PCA, clustering
+|
++-- API/
+    +-- app.py                  # FastAPI application (/, /features, /predict)
+    +-- schema.py               # Pydantic request schema (24 engineered features)
+    +-- requirements.txt        # Python dependencies
+    +-- models/
+        +-- customer_segmentation.pkl     # Trained clustering model
+        +-- customer_response_model.pkl   # Trained response model
+        +-- features.pkl                  # Canonical feature order
+````
