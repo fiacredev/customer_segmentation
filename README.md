@@ -54,3 +54,17 @@ customer-segmentation/
         +-- customer_response_model.pkl   # Trained response model
         +-- features.pkl                  # Canonical feature order
 ````
+
+## Dataset
+
+`marketing_campaign.csv` contains **2,240 customers** described by 29 attributes:
+
+| Group | Columns |
+|---|---|
+| People | `ID`, `Year_Birth`, `Education`, `Marital_Status`, `Income`, `Kidhome`, `Teenhome`, `Dt_Customer`, `Recency` |
+| Products | `MntWines`, `MntFruits`, `MntMeatProducts`, `MntFishProducts`, `MntSweetProducts`, `MntGoldProds` |
+| Purchases | `NumWebPurchases`, `NumCatalogPurchases`, `NumStorePurchases`, `NumDealsPurchases`, `NumWebVisitsMonth` |
+| Campaigns | `AcceptedCmp1`-`AcceptedCmp5`, `Complain`, `Response` |
+
+From these raw columns the notebook engineers richer features such as `Age`, `Spent`,
+`Children`, `Family_Size`, `Is_Parent`, `Customer_For` and `Total_Promos`.
