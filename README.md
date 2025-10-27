@@ -68,3 +68,13 @@ customer-segmentation/
 
 From these raw columns the notebook engineers richer features such as `Age`, `Spent`,
 `Children`, `Family_Size`, `Is_Parent`, `Customer_For` and `Total_Promos`.
+
+## Machine-Learning Pipeline
+
+1. **Cleaning** - drop missing incomes, parse `Dt_Customer`, cap outlier ages and incomes
+2. **Feature engineering** - `Customer_For`, `Spent`, `Children`, `Family_Size`, `Is_Parent`, `Total_Promos`
+3. **Encoding** - `LabelEncoder` for the remaining categorical columns
+4. **Scaling** - `StandardScaler` so no feature dominates the distance metrics
+5. **Dimensionality reduction** - `PCA(n_components=3)` for clustering and visualisation
+6. **Clustering** - elbow method with `KElbowVisualizer` -> **4 clusters** via `AgglomerativeClustering`
+7. **Export** - model and feature order persisted with `joblib` into `API/models/`
