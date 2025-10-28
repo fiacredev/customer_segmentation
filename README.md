@@ -78,3 +78,12 @@ From these raw columns the notebook engineers richer features such as `Age`, `Sp
 5. **Dimensionality reduction** - `PCA(n_components=3)` for clustering and visualisation
 6. **Clustering** - elbow method with `KElbowVisualizer` -> **4 clusters** via `AgglomerativeClustering`
 7. **Export** - model and feature order persisted with `joblib` into `API/models/`
+
+## The Four Customer Segments
+
+| Cluster | Segment | Profile | Marketing action |
+|:---:|---|---|---|
+| 0 | **Premium Customers** | High spenders with a strong income | Offer loyalty rewards |
+| 1 | **Budget Customers** | Cost-conscious, deal-driven shoppers | Send discounts |
+| 2 | **Regular Customers** | Steady, average purchasers | Recommend products |
+| 3 | **Inactive Customers** | Lapsed or low-engagement buyers | Run a retention campaign |
