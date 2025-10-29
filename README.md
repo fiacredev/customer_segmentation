@@ -87,3 +87,13 @@ From these raw columns the notebook engineers richer features such as `Age`, `Sp
 | 1 | **Budget Customers** | Cost-conscious, deal-driven shoppers | Send discounts |
 | 2 | **Regular Customers** | Steady, average purchasers | Recommend products |
 | 3 | **Inactive Customers** | Lapsed or low-engagement buyers | Run a retention campaign |
+
+## API Reference
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/` | Health check / welcome message |
+| `GET` | `/features` | Returns the canonical feature order used by the model |
+| `POST` | `/predict` | Classifies a customer into one of the four segments |
+
+FastAPI also serves **interactive documentation** at `/docs` (Swagger UI) and `/redoc`.
