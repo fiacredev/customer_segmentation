@@ -97,3 +97,32 @@ From these raw columns the notebook engineers richer features such as `Age`, `Sp
 | `POST` | `/predict` | Classifies a customer into one of the four segments |
 
 FastAPI also serves **interactive documentation** at `/docs` (Swagger UI) and `/redoc`.
+
+## Example Request
+
+````bash
+curl -X POST "http://127.0.0.1:8000/predict" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "Education": 7, "Income": 65000,
+    "Kidhome": 0, "Teenhome": 1, "Recency": 20,
+    "Wines": 450, "Fruits": 30, "Meat": 250,
+    "Fish": 60, "Sweets": 35, "Gold": 80,
+    "NumDealsPurchases": 3, "NumWebPurchases": 8,
+    "NumCatalogPurchases": 4, "NumStorePurchases": 10,
+    "NumWebVisitsMonth": 5, "Customer_For": 3000,
+    "Age": 45, "Spent": 900, "Living_With": 1,
+    "Children": 1, "Family_Size": 3, "Is_Parent": 1,
+    "Total_Promos": 2
+  }'
+````
+
+**Response**
+
+````json
+{
+  "cluster": 0,
+  "segment": "Premium Customers",
+  "recommendation": "Offer loyalty rewards"
+}
+````
