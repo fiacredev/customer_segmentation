@@ -126,3 +126,31 @@ curl -X POST "http://127.0.0.1:8000/predict" \
   "recommendation": "Offer loyalty rewards"
 }
 ````
+
+## Getting Started
+
+### 1. Clone the repository
+
+````bash
+git clone <repo-url>
+cd customer-segmentation/API
+````
+
+### 2. Create a virtual environment and install dependencies
+
+````bash
+python3 -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+````
+
+### 3. Launch the API
+
+````bash
+uvicorn app:app --reload
+````
+
+The service starts on `http://127.0.0.1:8000` - open `http://127.0.0.1:8000/docs` to try
+`/predict` interactively.
+
+> Run `uvicorn` from inside the `API/` folder so the artifacts in `models/` resolve correctly.
