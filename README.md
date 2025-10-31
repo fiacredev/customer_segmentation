@@ -154,3 +154,22 @@ The service starts on `http://127.0.0.1:8000` - open `http://127.0.0.1:8000/docs
 `/predict` interactively.
 
 > Run `uvicorn` from inside the `API/` folder so the artifacts in `models/` resolve correctly.
+
+## Tech Stack
+
+| Layer | Tools |
+|---|---|
+| Data | pandas, NumPy |
+| ML | scikit-learn (PCA, AgglomerativeClustering, KMeans, LabelEncoder, StandardScaler), Yellowbrick |
+| API | FastAPI, Pydantic, Uvicorn |
+| Notebook | Jupyter |
+
+---
+
+<div align="center">
+
+Made with care by **[fiacre](mailto:fiacredeveloper@gmail.com)**
+
+If this project helps you, a star on the repo would be much appreciated!
+
+</div>
